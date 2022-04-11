@@ -12,11 +12,13 @@ I would be sharpening my skill in frontend dev by creating/recreating new/some p
 ### Challenge 1 - Profile Card componemts
 
 What they ordered:
+
 ![original challenge-mobile](images/mobile-design.jpg)
 ![original challenge-desktop](images/desktop-design.jpg)
 
 Vs what they got:
+
 ![whattheygot-mobile](images/whattheygot-mobile.PNG)
 ![whattheygot-desktop](images/whattheygot-desktop.PNG)
 
-Check the live code [here](https://congenial-palm-tree.vercel.app/profile)
+Check the live code [here](https://congenial-palm-tree.vercel.app/profile).
