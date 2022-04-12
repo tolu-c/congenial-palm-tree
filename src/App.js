@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Comment from "./pages/interactive-comment/Comment";
+import PageNotFound from "./pages/PageNotFound";
 import ProfileHome from "./pages/profile-page/ProfileHome";
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="profile" element={<ProfileHome />} />
           <Route path="comments" element={<Comment />} />
+          <Route path='*' element={<PageNotFound />} />
         </Routes>
       </Router>
     </div>
