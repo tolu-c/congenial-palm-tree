@@ -12,6 +12,9 @@ function Home() {
         <li>
           <Link to="profile">Profile</Link>
         </li>
+        <li>
+          <Link to="comments">Comment</Link>
+        </li>
       </ul>
     </div>
   );
