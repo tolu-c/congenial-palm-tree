@@ -13,7 +13,7 @@ function Home() {
           <Link to="profile">Profile</Link>
         </li>
         <li>
-          <Link to="comments">Comment</Link>
+          <Link to="comments">Comments</Link>
         </li>
       </ul>
     </div>
