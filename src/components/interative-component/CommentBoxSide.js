@@ -13,7 +13,7 @@ export default function CommentBoxSide() {
   }
 
   return (
-    <div className="flex md:flex-col gap-2 items-center  text-blue-600/40 bg-blue-700/10 rounded-lg p-1 py-1 basis-8">
+    <div className="flex md:flex-col gap-2 text-blue-600/40 bg-blue-700/10 rounded-lg p-2 items-center justify-center">
       <PlusIcon className="h-4 w-4 hover:text-blue-800" onClick={addCount} />
       <span className="text-base text-blue-800 font-bold">{count}</span>
       <MinusSmIcon className="h-4 w-4 hover:text-blue-800" onClick={minusCount} />

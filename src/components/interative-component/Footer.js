@@ -3,7 +3,7 @@ import Reply from "./Reply";
 
 function Footer() {
   return (
-    <div classname='flex w-full items-center justify-between'>
+    <div className='flex w-full justify-between'>
       <CommentBoxSide />
       <Reply />
     </div>
