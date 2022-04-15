@@ -57,7 +57,7 @@ export default function CommentForm() {
           />
           <button
             type="submit"
-            className="bg-blue-800 text-white basis-1/4 text-lg flex items-center justify-center rounded-md px-4 py-3 uppercase font-medium hover:bg-blue-500 md:order-last md:px-3 md:py-2"
+            className="bg-blue-800 text-white basis-1/4 text-lg flex items-center justify-center rounded-md px-6 py-2 uppercase font-medium hover:bg-blue-500 md:order-last md:px-3 md:py-2"
           >
             send
           </button>
