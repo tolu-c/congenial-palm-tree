@@ -8,6 +8,11 @@ import AddComment from "../../components/comments/AddComment";
 import { useState } from "react";
 import CommentList from "../../components/comments/CommentList";
 
+// TODO: adjust responsiveness for long text, check tailwindcss text-ellipsis property
+// TODO: apply addComment functionality to reply button
+// TODO: add localStorage to store variables => comments, reply, votes
+// TODO: sync date to the each comment, i.e comment <==> Info
+
 function Comments() {
   const [commentList, setCommentList] = useState([]);
   console.log(commentList);
