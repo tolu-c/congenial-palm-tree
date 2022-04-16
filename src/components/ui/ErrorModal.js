@@ -13,7 +13,7 @@ const Backdrop = (props) => {
 
 const ModalOverlay = (props) => {
   return (
-    <div className="fixed top-[40vh] left-[8.5%] w-5/6 z-50 overflow-hidden bg-red-200 border-red-600 border rounded-lg p-3 shadow-lg shadow-red-400/40">
+    <div className="fixed top-[40vh] left-[8.5%] w-5/6 z-50 overflow-hidden bg-red-100/95 border-red-600 border rounded-lg p-3 shadow-lg shadow-red-400/40">
       <div className="flex flex-col gap-2 relative text-red-800">
         <h4 className="text-2xl font-bold capitalize">{props.title}!</h4>
         <p className="text-lg font-normal">{props.message}</p>
@@ -22,21 +22,6 @@ const ModalOverlay = (props) => {
           onClick={props.onConfirm}
         />
       </div>
-      {/* <div>
-        <div className="flex flex-col gap-4 border w-full text-left">
-          <header className="bg-black p-1 px-2">
-            <h2 className="text-white capitalize text-xl">{props.title}</h2>
-          </header>
-          <div className="p-2">
-            <p className="text-base text-gray-600 first-letter:uppercase">
-              {props.message}
-            </p>
-          </div>
-          <footer>
-            <button onClick={props.onConfirm}>close</button>
-          </footer>
-        </div>
-      </div> */}
     </div>
   );
 };

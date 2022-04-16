@@ -1,14 +1,15 @@
-import man from "../../../images/man.jpg";
+// import Card from "../ui/Card";
+import ErrorModal from "../ui/ErrorModal";
+import Wrapper from "../ui/Wrapper";
 import { useState, useRef } from "react";
-import Wrapper from "../../ui/Wrapper";
-import ErrorModal from "../../ui/ErrorModal";
+import man from "../../images/man.jpg";
 
-export default function CommentForm() {
+function AddComment(props) {
   const commentRef = useRef();
   const [error, setError] = useState();
 
-  function handleSubmit(e) {
-    e.preventDefault();
+  function addComment(event) {
+    event.preventDefault();
 
     const enteredComment = commentRef.current.value;
 
@@ -23,9 +24,10 @@ export default function CommentForm() {
 
     console.log("form submitted");
     console.log(`{comment: ${enteredComment}}`);
-    // alert(`{comment: ${enteredComment}}`);
+    props.onAddComment(enteredComment);
     commentRef.current.value = "";
   }
+
   function errorHandler() {
     setError(null);
   }
@@ -41,7 +43,7 @@ export default function CommentForm() {
       )}
       <div className="w-full md:max-w-xl mx-auto p-3 md:pt-4 bg-white rounded-lg h-auto shadow-md">
         <form
-          onSubmit={handleSubmit}
+          onSubmit={addComment}
           className="flex flex-wrap md:flex-nowrap items-center md:items-start justify-between gap-4 md:gap-2 md:justify-start"
         >
           <textarea
@@ -66,3 +68,5 @@ export default function CommentForm() {
     </Wrapper>
   );
 }
+
+export default AddComment;
