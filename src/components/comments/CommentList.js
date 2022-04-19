@@ -8,13 +8,15 @@ function CommentList(props) {
     <>
       {props.comments.map((comment, index) => (
         <Card key={index}>
-          <div className="flex w-full justify-between order-last md:order-first">
+          <div className="flex w-full justify-between order-last md:order-first h-[25%] md:h-auto">
             <Vote />
             <Reply />
           </div>
-          <div className="flex flex-col gap-2 md:w-5/6 md:absolute md:left-12 md:h-full">
+          <div className="flex flex-col gap-2 md:w-5/6 md:absolute md:left-12 md:h-full h-[65%]">
             <Info />
-            {comment.comment}
+            <div className="w-full h-[70%]">
+                <p className="text-ellipsis overflow-hidden text-base text-slate-500">{comment.comment}</p>
+            </div>
           </div>
         </Card>
       ))}

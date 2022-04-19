@@ -26,7 +26,7 @@ function Comments() {
   return (
     <main className="bg-gradient-to-br from-blue-200/75 via-purple-400 to-blue-600 flex items-center justify-center overflow-hidden h-screen">
       <BackButton />
-      <div className="flex flex-col gap-4 h-5/6 w-5/6 overflow-auto overscroll-contain rounded-lg">
+      <div className="flex flex-col gap-4 h-[90%] w-5/6 overflow-auto overscroll-contain rounded-lg">
         <SingleComment />
         <SingleComment />
         {/* <CommentForm /> */}
